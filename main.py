@@ -2,6 +2,7 @@ from random import randint
 
 random_list = [randint(1, 99) for i in range(10)]
 random_list_2 = [randint(1, 99) for i in range(10)]
+user_degree = int(input("Выберите степень для списка "))
 print(random_list)
 
 
@@ -64,3 +65,10 @@ print("Второй список - ", random_list_2)
 print("Объедененные списки ", combine_lists(random_list, random_list_2))
 
 
+def list_to_degree(list_6, degree):
+    new_list = []
+    for i in list_6:
+        new_list.append(i ** degree)
+    return new_list
+
+print("Список возведенный в степень ", list_to_degree(random_list, user_degree))
