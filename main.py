@@ -1,6 +1,7 @@
 from random import randint
 
 random_list = [randint(1, 99) for i in range(10)]
+random_list_2 = [randint(1, 99) for i in range(10)]
 print(random_list)
 
 
@@ -51,3 +52,15 @@ def find_and_delete_num(list_4):
     return counter
 
 print("число найденных и удаленных чисел ", find_and_delete_num(random_list))
+
+
+
+def combine_lists(list_1, list_2):
+    list_3 = list_1 + list_2
+    return list_3
+
+
+print("Второй список - ", random_list_2)
+print("Объедененные списки ", combine_lists(random_list, random_list_2))
+
+
